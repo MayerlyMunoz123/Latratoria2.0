@@ -41,7 +41,6 @@ import { Menu1Component } from './ambientes/ambiente1/menu1/menu1.component';
     NavbarComponent,
     FooterComponent,
     RouterModule,
-    Menu1Component
    
     
   ],

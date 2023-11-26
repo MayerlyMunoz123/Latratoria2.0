@@ -21,7 +21,7 @@ export class AppComponent {
         this.isLoginPage = event.url.includes('/login');
         this.isAmbientePage = event.url.includes('/ambiente');
         this.isMenuPage = event.url.includes('/menu1') || event.url.includes('/menu2') || event.url.includes('/menu3');
-        this.isMenuVisible = !this.isMenuPage;
+        this.isMenuVisible = this.isMenuPage;
       }
     });
   }
