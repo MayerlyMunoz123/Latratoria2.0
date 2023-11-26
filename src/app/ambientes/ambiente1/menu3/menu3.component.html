@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Menú del Restaurante</title>
+  <!-- Agregar enlaces a las hojas de estilo de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height:auto;
+      background-image: url('../../../../assets/img/4.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .menu-container {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      width: 50%;
+      height: 100%;
+    }
+    .menu-card {
+      background: none;
+      border: none;
+    }
+    .card-img {
+      max-width: 50%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+<div class="menu-container">
+  <h1>Menu 3</h1>
+  <a routerLink="/menu1"><button type="button" class="btn btn-outline-secondary">Menu1</button></a>
+<a routerLink="/menu2"><button type="button" class="btn btn-outline-secondary">Menu2</button></a>
+
+  <div class="card menu-card">
+    <div class="row no-gutters">
+      <div class="col-md-6">
+        <img src="../../../../assets/img/7.jpg" alt="Sushi" class="card-img">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <h2 class="card-title">Sushi</h2>
+          <p class="card-text">El sushi es una deliciosa combinación de arroz y pescado fresco, presentado de manera artística.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card menu-card">
+    <div class="row no-gutters">
+      <div class="col-md-6">
+        <img src="../../../../assets/img/6.jpg" alt="Ramen" class="card-img">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <h2 class="card-title">Ramen</h2>
+          <p class="card-text">El ramen es un tazón de fideos japoneses en caldo, acompañado de ingredientes como carne, huevo y verduras.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card menu-card">
+    <div class="row no-gutters">
+      <div class="col-md-6">
+        <img src="../../../../assets/img/5.jpg" alt="Mochi" class="card-img">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <h2 class="card-title">Mochi</h2>
+          <p class="card-text">El mochi es un postre japonés hecho de arroz glutinoso, generalmente relleno de anko (pasta de judías dulces). </p>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Agregar enlaces a los scripts de Bootstrap y jQuery (si es necesario) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
