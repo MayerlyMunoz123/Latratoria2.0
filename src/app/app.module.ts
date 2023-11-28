@@ -10,7 +10,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { AmbientesComponent } from './ambientes/ambientes/ambientes/ambientes.component';
 import { RouterModule } from '@angular/router';
 import { FormularioComponent } from './auth/formulario/formulario.component';
-import { Menu1Component } from './ambientes/ambiente1/menu1/menu1.component';
+import { Ambiente1Module} from './ambientes/ambiente1/ambiente1.module';
 
 
 
@@ -19,19 +19,17 @@ import { Menu1Component } from './ambientes/ambiente1/menu1/menu1.component';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    Menu1Component,
+
     AmbientesComponent,
     NavbarComponent,
     FooterComponent,
     FormularioComponent
-   
-   
-    
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-    
+    AppRoutingModule,
+    Ambiente1Module
   ],
   exports: [
     AppComponent,
@@ -41,8 +39,7 @@ import { Menu1Component } from './ambientes/ambiente1/menu1/menu1.component';
     NavbarComponent,
     FooterComponent,
     RouterModule,
-   
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

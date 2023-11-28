@@ -6,13 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './menu1.component.css'
 })
 export class Menu1Component {
-  isVisible: boolean = false;
+ 
 
-  mostrarMenu1() {
-    this.isVisible = true;
-  }
 
-  ocultarMenu1() {
-    this.isVisible = false;
-  }
 }
