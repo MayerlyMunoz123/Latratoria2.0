@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('../../../../assets/img/4.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 50%;
+  height: 95%;
+}
+.menu-card {
+  background: none;
+  border: none;
+}
+.card-img {
+  max-width: 50%;
+  height: auto;
+}
