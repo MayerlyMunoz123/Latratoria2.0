@@ -18,11 +18,16 @@ import { Menu3Component as Menu3ComponentAmbiente3 } from './ambientes/ambiente3
 import { Ambiente1Component } from './ambientes/ambiente1/ambiente1.component';
 import { Ambiente2Component } from './ambientes/ambiente2/ambiente2.component';
 import { Ambiente3Component } from './ambientes/ambiente3/ambiente3.component';
+import { FormularioComponent } from './auth/formulario/formulario.component';
+import { Formulario2Component } from './auth/formulario2/formulario2.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { DeleteComponent } from './auth/delete/delete.component';
+import { UpdateComponent } from './auth/update/update.component';
 
 
 
 const routes: Routes = [
-  
+
    { path: 'ambiente1',component:Ambiente1Component, children: [
     { path: 'menu1', component: Menu1ComponentAmbiente1 },
     { path: 'menu2', component: Menu2ComponentAmbiente1 },
@@ -48,30 +53,35 @@ const routes: Routes = [
     { path: 'menu1', component: Menu1ComponentAmbiente3},
       { path: '', redirectTo: 'menu1', pathMatch: 'full' }
     ]},
- 
-  
-  {
-    path: 'ambiente2',
-    children: [
-     
-      { path: 'menu2', component: Menu2ComponentAmbiente2 },
-      { path: 'menu3', component: Menu3ComponentAmbiente2 },
-    
-  
 
-    ]
-  },
-  {
-    path: 'ambiente3',
-    children: [
-      { path: 'menu1', component: Menu1ComponentAmbiente3 },
-      { path: 'menu2', component: Menu2ComponentAmbiente3 },
-      { path: 'menu3', component: Menu3ComponentAmbiente3 },
 
-    
-    ]
-  },
+  // {
+  //   path: 'ambiente2',
+  //   children: [
+
+  //     { path: 'menu2', component: Menu2ComponentAmbiente2 },
+  //     { path: 'menu3', component: Menu3ComponentAmbiente2 },
+
+
+
+  //   ]
+  // },
+  // {
+  //   path: 'ambiente3',
+  //   children: [
+  //     { path: 'menu1', component: Menu1ComponentAmbiente3 },
+  //     { path: 'menu2', component: Menu2ComponentAmbiente3 },
+  //     { path: 'menu3', component: Menu3ComponentAmbiente3 },
+
+
+  //   ]
+  // },
   { path: 'login', component: LoginComponent },
+  { path: 'formulario', component: FormularioComponent },
+  { path: 'formulario2', component: Formulario2Component },
+  { path: 'delete', component: DeleteComponent },
+  { path: 'update', component: UpdateComponent },
+  { path: 'register', component: RegisterComponent },
   { path: 'ambientes', component: AmbientesComponent },
   { path: '', redirectTo: '/ambientes', pathMatch: 'full' },
 ];

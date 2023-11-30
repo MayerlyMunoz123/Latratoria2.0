@@ -10,9 +10,12 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { AmbientesComponent } from './ambientes/ambientes/ambientes/ambientes.component';
 import { RouterModule } from '@angular/router';
 import { FormularioComponent } from './auth/formulario/formulario.component';
+import { Formulario2Component } from './auth/formulario2/formulario2.component';
 import { Ambiente1Module} from './ambientes/ambiente1/ambiente1.module';
 import { Ambiente2Module } from './ambientes/ambiente2/ambiente2.module';
 import { Ambiente3Module } from './ambientes/ambiente3/ambiente3.module';
+import { DeleteComponent } from './auth/delete/delete.component';
+import { UpdateComponent } from './auth/update/update.component';
 
 
 
@@ -24,7 +27,10 @@ import { Ambiente3Module } from './ambientes/ambiente3/ambiente3.module';
     AmbientesComponent,
     NavbarComponent,
     FooterComponent,
-    FormularioComponent
+    FormularioComponent,
+    Formulario2Component,
+    DeleteComponent,
+    UpdateComponent
 
   ],
   imports: [
